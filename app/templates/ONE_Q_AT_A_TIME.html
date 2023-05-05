@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Quiz Page!</h1>
+        <h3>Question {{0}}: </h3>
+        <form action="{{ url_for('quiz') }}" method="POST">
+            <div>
+                <p>{{ questions[0][1] }}</p>
+                <p>{{ questions[0][2] }}</p>
+                <input type="radio" name="q", id = "SA">
+                <label for="SA">Strongly Agree</label><br>
+
+                <input type="radio" name="q", id = "A">
+                <label for="A">Agree</label><br>
+
+                <input type="radio" name="q", id = "MA">
+                <label for="MA">Moderately Agree</label><br>
+
+                <input type="radio" name="q", id = "MD">
+                <label for="MD">Moderately Disagree</label><br>
+
+                <input type="radio" name="q", id = "D">
+                <label for="MD">Disagree</label><br>
+
+                <input type="radio" name = "q", id = "SD">
+                <label for="SD">Strongly Disagree</label><br>
+            </div>
+            <br>
+            <button type="button" value = "V1" name = "back" onclick="window.location.href='{{ url_for('quiz') }}';">Back</button>
+            <button type="button" value = "V2" name = "next" onclick="window.location.href='{{ url_for('quiz') }}';">Next</button>
+
+            </form>
+
+{% endblock %}
+
+
+
+
+
+
+

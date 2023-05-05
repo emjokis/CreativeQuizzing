@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Congratulations!</h1>
+    <p>You've finished the Creativity Quiz! </p>
+    <p>Check out the stats page to see how your opinions compare to your friends. </p>
+
+    <button class="button" onclick="window.location.href='{{ url_for( 'stats') }}';">Stats</button>
+
+    <style>
+        body {
+          background-color: lightblue;
+          text-align: center;
+        }
+
+        h1 {
+          color: black;
+        }
+
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        .button {
+          background-color: #1E49C3;
+          border: none;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+         }
+    </style>
+{% endblock %}

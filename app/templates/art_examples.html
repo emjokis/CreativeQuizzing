@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h3>Look through some examples of the art shown in the quiz. Enjoy looking through them! </h3>
+
+    <button class="button" onclick="window.location.href='{{ url_for( 'paintings') }}';">Paintings</button>
+    <button class="button" onclick="window.location.href='{{ url_for( 'poems') }}';">Poems</button>
+
+    <style>
+        body {
+          background-color: lightblue;
+          text-align: center;
+        }
+
+        .button {
+          background-color: #1E49C3;
+          border: none;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+         }
+    </style>
+
+{% endblock %}

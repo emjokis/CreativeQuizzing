@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Quiz History and Stats</h1>
+    <!-- <p>This page will be dedicated to statistics based on quiz results. </p> -->
+    <div class="grid-container">
+
+    <div class="grid-child purple">
+        I believe that computers are creative.
+    </div>
+
+    <div class="grid-child green">
+        this is a new poem
+    </div>
+
+</div>
+
+</div>
+
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+        }
+        h1 {
+          text-align: center;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 15px;
+        }
+    </style>
+
+{% endblock %}

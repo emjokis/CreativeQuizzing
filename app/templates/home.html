@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Hi, Welcome to Creative Quizzing!</h1>
+    <h3>Start your Quiz or learn more about creativity!</h3>
+
+    <button class="button" onclick="window.location.href='{{ url_for( 'quiz') }}';">Start Quiz</button>
+    <button class="button" onclick="window.location.href='{{ url_for( 'faq') }}';">Learn More!</button>
+
+    <style>
+        body {
+          background-color: lightblue;
+          text-align: center;
+        }
+
+        h1 {
+          color: black;
+        }
+
+        p {
+          font-family: verdana;
+          font-size: 20px;
+        }
+        .button {
+          background-color: #1E49C3;
+          border: none;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+         }
+    </style>
+{% endblock %}

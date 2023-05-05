@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <button class="button" onclick="window.location.href='{{ url_for( 'poems') }}';">See Poem Examples</button>
+    <br>
+<h3>Below are some image of paintings. </h3>
+<h4>See if you can guess which ones were painted by humans and which were painted by computers. </h4>
+
+    <!-- {% for post in posts %}
+        <div><p><b><i>{{ post.title }}</i></b><br></p></div>
+        <img src= "{{url_for('paintings', filename='Picture1.png')}}" >
+
+    {% endfor %} -->
+
+<style>
+    body {
+          background-color: lightblue;
+          text-align: center;
+        }
+    .button {
+          background-color: #1E49C3;
+          border: none;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+         }
+</style>
+
+
+{% endblock %}

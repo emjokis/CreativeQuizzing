@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <button class="button" onclick="window.location.href='{{ url_for( 'paintings') }}';">See Painting Examples</button>
+    <br>
+    <h3>Below are some examples of poems. </h3>
+    <h4>See if you can guess which are written by humans and which are written by computers. </h4>
+
+    <p>
+        1. White sheep, white sheep, On a blue hill, When the wind stops, You all stand still. When the wind blows, You walk away slow. White sheep, white sheep, Where do you go?
+        <br>
+        <br>
+        2. Peace is a gentle breeze, Bringing calm to troubled seas, Love and kindness in our heart, A world where we can all restart.
+        <br>
+        <br>
+        3. Who has seen the wind? Neither I nor you. But when the leaves hang trembling, The wind is passing through. Who has seen the wind? Neither you nor I. But when the trees bow down their heads, The wind is passing by.
+        <br>
+        <br>
+        4. Soft and fuzzy, yellow and brown, Waddling and paddling, up and down, Little ducklings, cute as can be, Exploring the world, so full of glee.
+        <br>
+        <br>
+        5. Radishes, radishes, they dance and they prance, In polka dot pants and neon green pants, They sing silly songs and play tambourines, And nibble on moonbeams and tangerines.
+            Their laughter is like a cacophony of bells, And they twirl and they spin like dizzy carousel, They slide down rainbows and ride on the wind, And their silly antics never seem to end.
+        <br>
+        <br>
+        6. Love, a flame that burns so bright, Filling hearts with warmth and light, A feeling that can mend and heal, And make the broken hearted feel.
+        <br>
+        <br>
+        7. Worms, oh worms, so slimy and gross, They wiggle and squirm, like butter on toast, Their slimy bodies, oh how they shine, In the mud and dirt, they have a good time.
+        <br>
+        <br>
+        8. Silent night, the world sleeps tight, Softly falls the moonlit light, Shadows dance on walls and floors, Dreams unfold behind closed doors.
+        The night owl calls from high above, Whispering secrets of love, Nature's symphony fills the air, Peaceful moments, beyond compare.
+
+    </p>
+
+<!-- {% for post in posts %}
+        <div><p><b><i>{{ post.name }}</i></b><br></p></div>
+        <div><p>{{ post.body }}</p></div>
+    {% endfor %} -->
+
+<style>
+    body {
+          background-color: lightblue;
+          text-align: center;
+        }
+    .button {
+          background-color: #1E49C3;
+          border: none;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+         }
+    p {
+        text-align: left;
+    }
+</style>
+
+
+{% endblock %}

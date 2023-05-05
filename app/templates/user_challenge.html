@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>User Challenge</h1>
+    <h3>Try your hand at writing some poems!</h3>
+    <h4>Let inspiration strike, or write something silly and try to trick someone else into thinking your art is computer-made.</h4>
+    <form action="{{ url_for('submit_user_challenge') }}" method="post">
+            <div>
+               <TEXTAREA name="response" rows=10 cols=55></TEXTAREA>
+            </div>
+        <button class="button" onclick="window.location.href='{{ url_for( 'user_challenge') }}';">Submit</button>
+    </form>
+
+     <style>
+        body {
+          background-color: lightblue;
+          text-align: center;
+        }
+
+        .button {
+          background-color: #1E49C3;
+          border: none;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 8px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 2px;
+          cursor: pointer;
+         }
+    </style>
+{% endblock %}
